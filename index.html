@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"  type="text/css" />
+</head>
+<body>
+  <main id="main" role="main">
+    <!-- 자기소개 -->
+    <section id="profil">
+      <h1>자기소개서</h1>
+      <p>웹퍼블리싱 공부 중인 <strong>초보 코딩러</strong>입니다.<br>
+        열심히 공부해서 웹퍼블리셔로 취직하는 것이 목표입니다.</p>
+    </section>
+
+    <!-- 좋아하는 음식 -->
+    <section id="food">
+      <h2>좋아하는 음식</h2>
+      <ul>
+        <li>돼지갈비</li>
+        <li>치킨</li>
+      </ul>
+    </section>
+
+    <!-- 좋아하는 가수 -->
+    <section id="idol">
+      <h2>좋아하는 가수</h2>
+      <img
+      src="https://img3.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202108/25/starnews/20210825072239576oxwf.jpg"
+      alt="진 사진" />
+      <div><strong>진</strong></div>
+      <a href="https://www.youtube.com/watch?v=qEKQpCiuw6o&list=PL5hrGMysD_GuHjef9oGQpdRjo1vvx7IiB">n월의 석진 보러가기</a>
+    </section>
+
+    <!-- 좋아하는 노래 -->
+    <section id="song">
+      <h2>좋아하는 노래</h2>
+      <audio controls> 
+        <source src="./assets/Running Wild.mp3" type="audio/mpeg">
+      </audio>
+      <a href="https://htmlreference.io/element/audio/" target="_blank">오디오 넣는법 보기</a>
+    </section>
+
+    <!-- 인적사항 -->
+    <section id="info">
+      <h2>인적사항</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>질문</th>
+            <th>답변</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>사는 곳은?</td>
+            <td>지구 어딘가?</td>
+          </tr>
+          <tr>
+            <td>나이는?</td>
+            <td>미공개</td>
+          </tr>
+        </tbody>
+      </table>
+      <div>테이블 쓰는 법을 모르겠다고? <u>그럼 검색해봐!</u></div>
+    </section>
+
+    <!-- 연락 & 문의 -->
+    <section id="contact">
+      <h2>연락 & 문의</h2>
+      <div>
+        <input type="text" placeholder="무엇이든 물어보세요">
+        <button type="submit" class="contact-btn">전송</button>
+      </div>    
+    </section>
+  </main>
+</body>
+</html>

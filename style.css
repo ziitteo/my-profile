@@ -1,0 +1,184 @@
+/* 기본 스타일 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 공통 스타일 */
+h1, h2 {
+  text-align: center;
+  color: #df4ae2;
+  margin-bottom: 1rem;
+}
+
+p {
+  text-align: center;
+}
+
+section {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  scroll-margin-top: 50px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #df4ae2;
+}
+
+/* nav var */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f79cff;
+  color: #fff;
+}
+
+nav .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav .nav-menu a {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* main */
+/* 좋아하는 음식 섹션 */
+#food ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 이미지 스타일 */
+#idol img {   
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#idol div {
+  text-align: center;
+}
+
+#idol a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* 좋아하는 노래 섹션 */
+#song {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#song audio {
+  display: block;
+  margin: 1rem auto;
+}
+
+#song a {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* 인적사항 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+th {
+  background-color: #ffb3fe;
+  color: #fff;
+}
+
+td {
+  background-color: #f1f1f1;
+}
+
+#info div {
+  text-align: center;
+}
+
+/* 연락 & 문의 */
+#contact div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#contact input {
+  width: 80%;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+#contact .contact-btn {
+  padding: 0.5rem 1rem; 
+  background-color: #fb9ef3; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer;
+}
+
+
+/* 반응형 웹 디자인 */
+@media (max-width: 600px) {
+  section {
+    padding: 1rem;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
